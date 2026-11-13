@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>安全生产鞍钢项目 · 工作台</title><link rel="stylesheet" href="workbench.css"><script defer src="workbench.js"></script></head>
+<body>
+<header><img src="workbench-assets/logo.png" alt=""><strong>安全生产鞍钢项目</strong><div class="top-actions"><button aria-label="通知" data-open="通知公告">♟</button><button class="avatar" data-open="项目信息">项目</button><button data-open="项目信息">安全生产鞍钢项目</button><button class="exit" data-open="退出">退出</button></div></header>
+<aside><button id="collapse" aria-label="折叠菜单" aria-expanded="true">☰</button><nav><button class="selected" id="home">◆ <span>首页</span></button><button data-open="通知任务">♟ <span>通知任务</span></button><details open><summary>♟ <span>组织管理</span></summary><div><button data-open="成员管理">成员管理</button><button data-open="组织架构">组织架构</button><button data-open="岗位管理">岗位管理</button><button data-open="角色管理">角色管理</button></div></details><details><summary>◈ <span>位置区域管理</span></summary><div><button data-open="位置区域管理">位置区域管理</button></div></details><button data-open="数字大脑-鞍钢">◉ <span>数字大脑-鞍钢</span></button><details><summary>♟ <span>安全生产大家谈</span></summary><div><button data-open="安全生产大家谈">安全生产大家谈</button></div></details></nav></aside>
+<main>
+<div class="config"><button data-open="看板配置">⚙ 看板配置</button></div>
+<div class="overview">
+<section class="profile"><div class="badge">鞍钢<br>项目</div><div class="profile-info"><h2>鞍钢集团矿业有限公司</h2><p>安全生产鞍钢项目 / superadmin-271</p><p>鞍钢集团矿业有限公司</p><button data-open="项目信息" title="鞍钢集团矿业有限公司-鞍钢集团矿业有限公司"><span>鞍钢集团矿业有限公司-鞍钢集团矿业有限公司</span> ﹀</button></div></section>
+<section class="overview-card"><div class="section-title"><h2><i>◀</i>通知公告</h2><button class="link" data-open="通知公告">查看更多</button></div><div id="notices"></div></section>
+<section class="overview-card"><div class="section-title"><h2><i>◀</i>系统动态</h2></div><div id="releases"></div></section>
+</div>
+<section class="launcher" aria-label="功能入口"><div id="tabs" role="tablist" aria-label="模块类别"></div><div id="modules" role="tabpanel"></div></section>
+<div class="boards">
+<section class="board" id="tasks"><div class="section-title"><h2><i>▣</i>待办任务</h2><label class="month"><span id="month-label"></span><input aria-label="选择月份" type="month" value="2026-11"></label><button class="link" data-open="待办任务">查看更多&gt;&gt;</button></div><div class="calendar"><div id="days"></div><div id="task-list"></div></div></section>
+<section class="board" id="hazards"><div class="section-title"><h2><i>⚠</i>隐患排查治理</h2><button class="link" data-open="隐患排查治理看板">查看更多&gt;&gt;</button></div><div class="ranking">⏩ <b>排查任务排名</b></div><div class="metrics"><div><button data-open="未整改隐患"><strong>0</strong>未整改隐患</button><button data-open="超期未整改"><strong>0</strong>超期未整改</button></div><div class="empty"><span>▣</span>暂无数据</div></div></section>
+</div>
+</main>
+<button class="assistant" aria-label="安全智能助手" data-open="安全智能助手"><img src="workbench-assets/assistant.png" alt=""></button>
+<dialog id="modal" aria-labelledby="modal-title"><div class="dialog-title"><h2 id="modal-title"></h2><button aria-label="关闭" id="close">×</button></div><div id="modal-body"></div><form method="dialog" class="dialog-footer"><button>关闭</button></form></dialog>
+</body></html>
